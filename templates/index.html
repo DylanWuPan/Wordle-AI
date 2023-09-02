@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wordle AI Helper</title>
+        <link rel="stylesheet" type="text/css" href="static/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script type = "text/javascript" src="static/index.js"></script>
+    </head>
+    <body>
+        <div id = header>
+            <h1>Wordle AI Helper</h1>
+        </div>
+        <div id = interface>
+            <div id = input>
+                <div id = colorSelectors>
+                    <p>Select Appropriate Colors:</p>
+                    <div id = selectGreen class = "selector"></div>
+                    <div id = selectYellow class = "selector"></div>
+                    <div id = selectGray class = "selector"></div>
+                </div>
+                <div id = colorIndicator></div>
+                <table id = board>
+                    <tr id = row>
+                        <td id = r1t1 class = "letter default"></td>
+                        <td id = r1t2 class = "letter default"></td>
+                        <td id = r1t3 class = "letter default"></td>
+                        <td id = r1t4 class = "letter default"></td>
+                        <td id = r1t5 class = "letter default"></td>
+                    </tr>
+                    <tr id = row>
+                        <td id = r2t1 class = "letter default"></td>
+                        <td id = r2t2 class = "letter default"></td>
+                        <td id = r2t3 class = "letter default"></td>
+                        <td id = r2t4 class = "letter default"></td>
+                        <td id = r2t5 class = "letter default"></td>
+                    </tr>
+                    <tr id = row>
+                        <td id = r3t1 class = "letter default"></td>
+                        <td id = r3t2 class = "letter default"></td>
+                        <td id = r3t3 class = "letter default"></td>
+                        <td id = r3t4 class = "letter default"></td>
+                        <td id = r3t5 class = "letter default"></td>
+                    </tr>
+                    <tr id = row>
+                        <td id = r4t1 class = "letter default"></td>
+                        <td id = r4t2 class = "letter default"></td>
+                        <td id = r4t3 class = "letter default"></td>
+                        <td id = r4t4 class = "letter default"></td>
+                        <td id = r4t5 class = "letter default"></td>
+                    </tr>
+                    <tr id = row>
+                        <td id = r5t1 class = "letter default"></td>
+                        <td id = r5t2 class = "letter default"></td>
+                        <td id = r5t3 class = "letter default"></td>
+                        <td id = r5t4 class = "letter default"></td>
+                        <td id = r5t5 class = "letter default"></td>
+                    </tr>
+                    <tr id = row>
+                        <td id = r6t1 class = "letter default"></td>
+                        <td id = r6t2 class = "letter default"></td>
+                        <td id = r6t3 class = "letter default"></td>
+                        <td id = r6t4 class = "letter default"></td>
+                        <td id = r6t5 class = "letter default"></td>
+                    </tr>
+                </table>
+                <div id = buttons>
+                    <div id = "submitButton" class = "button">Submit</div>
+                    <div id = "resetButton" class = "button">Reset</div>
+                </div>
+            </div>
+            <div id = response>
+                <div id = wordlistBox>
+                    <p id = wordlistTitle>Remaining Words:</p>
+                    <div id = "wordlist"></div>
+                </div>
+                <div id = "revealButton" class = "button">Reveal Best Word</div>
+            </div>
+        </div>
+        
+        <ul>
+            <h2>TODO</h2>
+            <li>animation on submit</li>
+        </ul>
+    </body>
+        
+</html>
